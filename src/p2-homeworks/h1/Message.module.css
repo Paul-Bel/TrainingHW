@@ -1,0 +1,41 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    background-color: mediumpurple;
+}
+
+.typeMes {
+    display: flex;
+}
+.ugol {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(92, 163, 99,34)0);
+}
+.text {
+    color: mistyrose;
+    font-size: 15px;}
+.time {
+    color: papayawhip;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.oblako {
+    border-radius: 5px 5px 5px 0px;
+    background-color: rgba(92, 163, 99, 34);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: flex-end;
+}
+
+
+/*background-color:*/
+
+/*grid-area: c;*/
