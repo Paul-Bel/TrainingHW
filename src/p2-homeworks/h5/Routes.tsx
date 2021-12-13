@@ -6,6 +6,7 @@ import { Switch } from 'react-router-dom';
 import {Junior} from "./pages/Junior";
 import {JuniorPL} from "./pages/JuniorPL";
 
+
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
     JUNIOR: '/junior',

@@ -2,6 +2,8 @@
     display: flex;
     align-items: flex-end;
     background-color: mediumpurple;
+    width: min-content;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .typeMes {
@@ -34,8 +36,10 @@
     border-radius: 50%;
     align-items: flex-end;
 }
-
-
+.name {
+    width: 170px;
+    border-radius: 0px 5px 5px 0px;
+}
 /*background-color:*/
 
 /*grid-area: c;*/

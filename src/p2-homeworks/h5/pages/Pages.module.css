@@ -1,8 +1,17 @@
 .NoPages{
-    width: 800px;
+    width: 100%;
 }
 .NoPages {
-    margin: 80px;
+    margin: 0px;
     font-size: 200px;
+    width: auto;
     background-color: midnightblue;
+    align-items: center;
+}
+
+.photo{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
 }
