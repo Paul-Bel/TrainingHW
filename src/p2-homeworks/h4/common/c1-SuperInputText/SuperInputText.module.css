@@ -14,7 +14,19 @@
 }
 
 .spanClassName {
+background-color: white;
+    color: white;
+}
 
-    color: black;
+.spanClass {
+    background-color: #5ca363;
+    border: 1px solid white;
+    border-radius: 2px;
+
+    padding: 1px 0 3px 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    width: 180px;
 }
 
