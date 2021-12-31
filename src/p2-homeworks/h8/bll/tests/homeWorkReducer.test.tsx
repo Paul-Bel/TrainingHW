@@ -18,6 +18,8 @@ beforeEach(() => {
 test('sort name up', () => {
     const newState = homeWorkReducer(initialState, SortUP_AC())
 
+
+
     console.log(newState)
     expect(initialState[0].name).toBe('Александр')
 })

@@ -32,14 +32,13 @@ function HW8() {
         setPeople(homeWorkReducer(initialPeople, SortCheck_AC()))
     }
 
+
     return (
         <div>
             <hr/>
-            homeworks 8
-
+            Homeworks 8
             {/*should work (должно работать)*/}
             {finalPeople}
-
             <div>
                 <SuperButton onClick={sortUp}>sort up</SuperButton>
                 <SuperButton onClick={sortDown}>sort down</SuperButton>
