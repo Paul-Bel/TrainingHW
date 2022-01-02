@@ -31,15 +31,13 @@ function HW8() {
     const sortCheck = () => {
         setPeople(homeWorkReducer(initialPeople, SortCheck_AC()))
     }
-
-
     return (
         <div>
             <hr/>
             Homeworks 8
             {/*should work (должно работать)*/}
             {finalPeople}
-            <div>
+            <div >
                 <SuperButton onClick={sortUp}>sort up</SuperButton>
                 <SuperButton onClick={sortDown}>sort down</SuperButton>
                 <SuperButton onClick={sortCheck}>check 18</SuperButton>

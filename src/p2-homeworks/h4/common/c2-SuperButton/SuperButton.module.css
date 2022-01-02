@@ -1,9 +1,32 @@
-.default {
-
+.default:hover {
+    background:#53ea93;
+    border-radius: 10px;
+    box-shadow:
+            1px 1px #53ea93,
+            2px 2px #53ea93,
+            3px 3px #53ea93,
+            4px 4px #53ea93,
+            5px 5px #53ea93,
+            6px 6px #53ea93,
+            7px 7px #53ea93;
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+    cursor: pointer;
 }
-
-.red {
+.default {
+    border-radius: 10px;
+    cursor: pointer;
+}
+.red:hover {
+    background:#53ea93;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 23px #53ea93;
+    cursor: pointer;
+}
+.red{
     background: red;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 
