@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/TrainingHW/static/css/main.c68b5c16.chunk.css",
-    "main.js": "/TrainingHW/static/js/main.b93ee5a4.chunk.js",
-    "main.js.map": "/TrainingHW/static/js/main.b93ee5a4.chunk.js.map",
+    "main.css": "/TrainingHW/static/css/main.e455ca03.chunk.css",
+    "main.js": "/TrainingHW/static/js/main.c1ffc447.chunk.js",
+    "main.js.map": "/TrainingHW/static/js/main.c1ffc447.chunk.js.map",
     "runtime-main.js": "/TrainingHW/static/js/runtime-main.7fb941f3.js",
     "runtime-main.js.map": "/TrainingHW/static/js/runtime-main.7fb941f3.js.map",
-    "static/js/2.bad4b054.chunk.js": "/TrainingHW/static/js/2.bad4b054.chunk.js",
-    "static/js/2.bad4b054.chunk.js.map": "/TrainingHW/static/js/2.bad4b054.chunk.js.map",
+    "static/js/2.87325d5d.chunk.js": "/TrainingHW/static/js/2.87325d5d.chunk.js",
+    "static/js/2.87325d5d.chunk.js.map": "/TrainingHW/static/js/2.87325d5d.chunk.js.map",
     "index.html": "/TrainingHW/index.html",
-    "static/css/main.c68b5c16.chunk.css.map": "/TrainingHW/static/css/main.c68b5c16.chunk.css.map",
-    "static/js/2.bad4b054.chunk.js.LICENSE.txt": "/TrainingHW/static/js/2.bad4b054.chunk.js.LICENSE.txt"
+    "static/css/main.e455ca03.chunk.css.map": "/TrainingHW/static/css/main.e455ca03.chunk.css.map",
+    "static/js/2.87325d5d.chunk.js.LICENSE.txt": "/TrainingHW/static/js/2.87325d5d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7fb941f3.js",
-    "static/js/2.bad4b054.chunk.js",
-    "static/css/main.c68b5c16.chunk.css",
-    "static/js/main.b93ee5a4.chunk.js"
+    "static/js/2.87325d5d.chunk.js",
+    "static/css/main.e455ca03.chunk.css",
+    "static/js/main.c1ffc447.chunk.js"
   ]
 }
