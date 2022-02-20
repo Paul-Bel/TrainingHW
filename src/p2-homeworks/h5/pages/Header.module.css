@@ -7,23 +7,14 @@
     width: 0px;
 
 }
-
 .menu:hover .buttons{
-    transition-duration: 300ms;
+    transition-duration: 500ms;
     transform: translate(0);
 }
-
-.collapse{
-    width: 250px;
-    display: flex;
-    cursor: pointer;
-    /*height: 160px;*/
-    /*background-color: midnightblue;*/
-}
-
 .buttons{
-    transition-duration: 300ms;
-    transform: translate(-380px);
+    /*transition-duration: 300ms;*/
+    transform: translate(-378px);
+    /*transform: rotate(180deg);*/
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0);
     color: beige;
@@ -33,12 +24,20 @@
     font-size: 12px;
     margin-top: auto;
 }
+.collapse{
+    width: 250px;
+    display: flex;
+    cursor: pointer;
+    /*height: 160px;*/
+    /*background-color: midnightblue;*/
+}
+
 .menuCollapsed {
     text-decoration: none;
     margin-right: 5px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     border-style: groove;
-    border-radius: 1px;
+    /*border-radius: 1px;*/
     border-color: wheat;
 }
 .buttonMenu {

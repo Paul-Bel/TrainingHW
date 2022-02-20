@@ -1,6 +1,21 @@
 .range {
-
+width: 146px;
+    border-radius: 2px;
+    height: 0.6em;
 }
 .container span{
     color: lightgoldenrodyellow;
+}
+.doubleRange {
+    display: flex;
+    flex-direction: row;
+}
+
+.value {
+    display: inline-block;
+    width: 25px;
+}
+.spanMax{
+    position: absolute;
+    left: 210px;
 }

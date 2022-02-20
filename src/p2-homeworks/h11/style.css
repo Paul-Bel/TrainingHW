@@ -1,0 +1,126 @@
+input[type="range"] {
+    --minRangePercent: 0%;
+    --maxRangePercent: 0%;
+    height: .4rem;
+}
+input[type="range"]:invalid {
+    box-shadow: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+
+}
+
+.min-max-slider {
+    position: relative;
+    /*width: 200px;*/
+    /*text-align: center;*/
+    /*margin-bottom: 50px;*/
+    margin: 5px;
+    left: -2px;
+}
+
+/*.min-max-slider::focus {*/
+/*    oultine: none;*/
+/*}*/
+
+/*input::focus {*/
+/*    outline: none;*/
+/*}*/
+
+.min-max-slider > label {
+    display: none;
+
+}
+
+.min-max-slider > input {
+    cursor: pointer;
+    position: absolute;
+
+}
+
+/* webkit specific styling */
+.min-max-slider > input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none !important;
+    background: transparent;
+
+}
+.min-max-slider > input.min {
+    background-image: linear-gradient(
+            to right,
+            /*#0002ff,*/
+            #007CF8,
+            #007CF8 var(--minRangePercent),
+            #eeeaea var(--minRangePercent),
+            #eeeaea 100%
+
+    );
+    border-radius: 2px 0 0 2px;
+    margin: 2px 0px;
+
+}
+
+.min-max-slider > input.max {
+    background-image: linear-gradient(
+            to right,
+            #eeeaea,
+            #eeeaea var(--maxRangePercent),
+            #007CF8 var(--maxRangePercent),
+            #007CF8 100%
+    );
+    margin-left: 0px;
+    border-radius: 0 2px 2px 0;
+}
+
+.min-max-slider > input::-webkit-slider-runnable-track,
+.min-max-slider > input::-moz-range-track,
+.min-max-slider > input::-ms-track {
+    box-sizing: border-box;
+    border: none;
+    height: 4px;
+    background: #007CF8;
+    border-radius: 8px;
+    height: 10px;
+    background-color: transparent;
+    background-image: linear-gradient(#007CF8, #007CF8),
+    linear-gradient(#007CF8, #007CF8);
+    /*background-size: var(--sx) 10px, calc(100% - var(--sx)) 4px;*/
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+}
+
+/*.min-max-slider > input::focus {*/
+/*    outline: none;*/
+/*}*/
+
+.min-max-slider > input.max::-moz-range-progress {
+    background: #007CF8;
+    border-radius: 4px;
+}
+
+.min-max-slider > input.min::-moz-range-progress {
+    height: 0.6em;
+    background: silver;
+    border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none; /* Override default look */
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #007CF8; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border: none;
+    /*color: 1px solid orange;*/
+    border-radius: 50%;
+    /* box-shadow: -205px 0 0 200px hsl(100, 100%, 40%); */
+}
+
+.min-max-slider > input::-webkit-slider-runnable-track {
+    cursor: pointer;
+}

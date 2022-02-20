@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {homeWorkReducer, SortCheck_AC, SortDown_AC, SortUP_AC} from './bll/homeWorkReducer'
+import React, {ChangeEvent, useState} from 'react'
+import {FilterUsers_AC, homeWorkReducer, SortCheck_AC, SortDown_AC, SortUP_AC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import s from './HW8.module.css'
 
@@ -16,8 +16,8 @@ const initialPeople: UserType = [
 
 function HW8() {
     const [people, setPeople] = useState<UserType>(initialPeople) // need to fix any
-
     // need to fix any
+    const [find, setFind] = useState('')
     const finalPeople = people.map((p: { _id: number, name: string, age: number }) => (
         <div key={p._id} className={s.text}>
             <span>{p.name}</span> <span> {p.age}</span>
@@ -31,16 +31,26 @@ function HW8() {
     const sortCheck = () => {
         setPeople(homeWorkReducer(initialPeople, SortCheck_AC()))
     }
+    const findClick = () => {
+        //const filterUsers = people.filter(user => user.name.toLocaleLowerCase().includes(find))
+        setPeople(homeWorkReducer(initialPeople, FilterUsers_AC(find)))
+        setFind('')
+
+    }
     return (
         <div>
             <hr/>
             Homeworks 8
             {/*should work (должно работать)*/}
             {finalPeople}
-            <div >
+            <input value={find}
+                   onChange={(e) => setFind(e.currentTarget.value)}
+            />
+            <div>
                 <SuperButton onClick={sortUp}>sort up</SuperButton>
                 <SuperButton onClick={sortDown}>sort down</SuperButton>
                 <SuperButton onClick={sortCheck}>check 18</SuperButton>
+                <SuperButton onClick={findClick}>find</SuperButton>
             </div>
 
             <hr/>
